@@ -18,7 +18,7 @@ for x in mycursor:
 ```SQL
 SHOW DATABASES
 ```
-![Alt text](image.png)
+![Alt text](./img/show_databases.png)
 
 ```python
 
@@ -43,4 +43,53 @@ mycursor.close()
 INSERT INTO test.test_table VALUES(123, "ARPIT", 99.99, 007, "DUBEY");
 ```
 
-![Alt text](image-1.png)
+![Alt text](./img/insert_values_in_db.png)
+
+```python
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="*****",
+    password="******"
+)
+
+mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE IF NOT EXISTS test_database")
+mydb.close()
+
+```
+
+```SQl
+CREATE DATABASE IF NOT EXISTS test_database;
+```
+
+![Alt text](./img/create_dd_test_db.png)  
+
+
+```python
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="********",
+    password="******"
+)
+
+mycursor = mydb.cursor()
+mycursor.execute("CREATE TABLE IF NOT EXISTS \
+    test_database.test_table(Id INT, Name VARCHAR(50), \
+        mobile_number INT, CGPA FLOAT, College VARCHAR(70))");
+
+mydb.close()
+
+```
+
+```SQL
+CREATE TABLE IF NOT EXISTS test_database.test_table(Id INT, Name VARCHAR(50), mobile_number INT, CGPA FLOAT, College VARCHAR(70));
+```
+
+![Alt text](./img/create_test_table.png)
+
