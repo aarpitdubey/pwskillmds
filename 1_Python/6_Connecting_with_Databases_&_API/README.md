@@ -93,3 +93,4 @@ CREATE TABLE IF NOT EXISTS test_database.test_table(Id INT, Name VARCHAR(50), mo
 
 ![Alt text](./img/create_test_table.png)
 
+![Alt text](.png)
