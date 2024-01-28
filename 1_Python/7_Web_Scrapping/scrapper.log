@@ -1,0 +1,21 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.214.47:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.214.47:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:42] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:42] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'Iphone15maxpro', 'Name': 'Jaspreet Virdi', 'Rating': '5', 'CommentHead': 'Super!', 'Comment': 'Good design, thinner bezzel, good performance, good battery life'}, {'Product': 'Iphone15maxpro', 'Name': 'Mamta  Kumari', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'Upgraded from 11 to 15 pro max after 2 year The display is awosome the bezzel are the thinnest And the A17 pro chip is blazing fast u can play bgmi at hdr in extreme seeting with no lag. The camera is mind blowing in lighting condition all like the dslr the quality is awesome u will not get this type of camera quality in any smartphone \U0001f929\u2764\ufe0f'}, {'Product': 'Iphone15maxpro', 'Name': 'Mahendra Saurabh', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'Very Good SmartphoneGood performance Good battery backup And camera performance superBut only negative point-  smartphone design same to same iphone 14 pro max'}, {'Product': 'Iphone15maxpro', 'Name': 'Ravideep Yadav', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': "I've reviewed and tested iPhones for years, but Apple's new iPhone 15 Pro Max is the first time I've ever been this enamored."}, {'Product': 'Iphone15maxpro', 'Name': 'Suraj Rawat', 'Rating': '3', 'CommentHead': 'Nice', 'Comment': 'The product is ok but when I use mobile to continue for 5 min it will start too much direct heat'}, {'Product': 'Iphone15maxpro', 'Name': 'Yashmeet Kashyap ', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'This one is love .. no words to explain ..'}, {'Product': 'Iphone15maxpro', 'Name': 'Rahul ghosh', 'Rating': '5', 'CommentHead': 'Super!', 'Comment': 'Excellent . Just loved it .\U0001f60d'}, {'Product': 'Iphone15maxpro', 'Name': 'Titas Kumar Koley', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': 'The phone is just 10/10. Amazing cameras, especially the 5x telephoto. Battery life goes over a day. The bezels look thin as well. Better to use with a case to prevent discolouration of the titanium body.'}, {'Product': 'Iphone15maxpro', 'Name': 'Srihari reddy Vanipenta', 'Rating': '1', 'CommentHead': 'Horrible', 'Comment': 'Facing heating issues even after ios 17 updateEven for simple tasks fone is heating like below 10k budget fone'}, {'Product': 'Iphone15maxpro', 'Name': 'Sami Khatri', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'Great Phone'}, {'Product': 'Iphone15maxpro', 'Name': 'Sami Khatri', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'Great Phone'}]
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:50] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:50] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Jan/2024 20:29:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
