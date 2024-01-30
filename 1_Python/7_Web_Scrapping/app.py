@@ -5,14 +5,17 @@ from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as uReq
 import logging
 logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
+import pymongo
 
 app = Flask(__name__)
 
 @app.route("/", methods = ['GET'])
+@cross_origin()
 def homepage():
     return render_template("index.html")
 
 @app.route("/review" , methods = ['POST' , 'GET'])
+@cross_origin()
 def index():
     if request.method == 'POST':
         try:
@@ -72,6 +75,13 @@ def index():
                           "Comment": custComment}
                 reviews.append(mydict)
             logging.info("log my final result {}".format(reviews))
+            
+            # Mongo DB connection
+            client = pymongo.MongoClient("mongodb+srv://aarpitdubey:aarpitdubey@cluster0.celbfi0.mongodb.net/?retryWrites=true&w=majority")
+            db = client['review_scrapper']
+            review_collection = db['review_scrapper_data']
+            review_collection.insert_many(reviews)
+            
             return render_template('result.html', reviews=reviews[0:(len(reviews)-1)])
         except Exception as e:
             logging.info(e)
